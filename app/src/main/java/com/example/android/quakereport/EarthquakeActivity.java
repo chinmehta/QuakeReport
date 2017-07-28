@@ -98,13 +98,12 @@ public class EarthquakeActivity extends AppCompatActivity {
 //
 //        TextView magnitudeTextView = (TextView) findViewById(R.id.perceived_magnitude);
 //        magnitudeTextView.setText(earthquake.perceivedStrength);
-        List<Earthquake> earthquakes = QueryUtils.fetchEarthquakeData(USGS_REQUEST_URL);
 
         // Find a reference to the {@link ListView} in the layout
         ListView earthquakeListView = (ListView) findViewById(R.id.list);
 
         // Create a new adapter that takes the list of earthquakes as input
-        final EarthquakeAdapter adapter = new EarthquakeAdapter(this, earthquakes);
+        final EarthquakeAdapter adapter = new EarthquakeAdapter(this, earthquake);
 
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface
