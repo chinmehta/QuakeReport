@@ -2,13 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="C:\Users\Shenron\.android\build-cache\6dd318c14ce36117578cfde6d907d9fb06062990\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\pre-dexed\debug\classes_cf9be931aed42fcfa491f2031e4e59a90233d49d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\Shenron\.android\build-cache\e50b94fb98250a74f079f012a263dccb1e521a37\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_72277ce0ab68986d4bc5a3e4b73b1d7d367a9827\classes.dex" />
+        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\pre-dexed\debug\classes_72277ce0ab68986d4bc5a3e4b73b1d7d367a9827.jar" />
     </item>
     <item
         is-multidex="true"
@@ -20,49 +29,31 @@
         <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_32403d6a2754cae70b88668dbcab9ee3b47a53eb\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Shenron\.android\build-cache\6dd318c14ce36117578cfde6d907d9fb06062990\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cf9be931aed42fcfa491f2031e4e59a90233d49d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Shenron\.android\build-cache\b3bd3b957550e5936a9243f14496dba0140baf93\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d909bf02b124b3888827197138e893a5309215a0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Shenron\.android\build-cache\97aed78e50fb15eef2bb571349929aa6f5565e40\output\jars\libs\internal_impl-23.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_a1e3e28a4c5ef191e92b156aee6ee52565746845\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Shenron\.android\build-cache\97aed78e50fb15eef2bb571349929aa6f5565e40\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b96d7da41d6f1ef356bcab8eef42dfd634e63e37\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Android\SDK\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_c23c989fd2f53b8f80e1364c8a866e61db45c99c\classes.dex" />
+        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_c23c989fd2f53b8f80e1364c8a866e61db45c99c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Shenron\.android\build-cache\97aed78e50fb15eef2bb571349929aa6f5565e40\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\pre-dexed\debug\classes_b96d7da41d6f1ef356bcab8eef42dfd634e63e37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Shenron\.android\build-cache\b3bd3b957550e5936a9243f14496dba0140baf93\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\pre-dexed\debug\classes_d909bf02b124b3888827197138e893a5309215a0.jar" />
     </item>
     <item
         is-multidex="true"
@@ -72,6 +63,15 @@
         revision="25.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5e636e81b69579b739dadbfb30ff156a5ec39dca\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Shenron\.android\build-cache\97aed78e50fb15eef2bb571349929aa6f5565e40\output\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Shenron\AndroidStudioProjects\QuakeReport\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_a1e3e28a4c5ef191e92b156aee6ee52565746845.jar" />
     </item>
 
 </items>

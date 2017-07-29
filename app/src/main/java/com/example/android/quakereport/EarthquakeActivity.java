@@ -25,6 +25,8 @@ import android.widget.ListView;
 import android.app.LoaderManager;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.content.Loader;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,12 +35,15 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
 
     /** URL for earthquake data from the USGS dataset */
     private static final String USGS_REQUEST_URL =
-            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time&minmag=6&limit=10";
+            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time";
 
 
     public static final String LOG_TAG = EarthquakeActivity.class.getName();
     private static final int EARTHQUAKE_LOADER_ID = 1;
     private EarthquakeAdapter adapter;
+
+    /** TextView that is displayed when the list is empty */
+    private TextView mEmptyStateTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +60,9 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
         // Set the adapter on the {@link ListView}
         // so the list can be populated in the user interface
         earthquakeListView.setAdapter(adapter);
+
+        mEmptyStateTextView = (TextView) findViewById(R.id.empty_view);
+        earthquakeListView.setEmptyView(mEmptyStateTextView);
 
 
         earthquakeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -89,10 +97,18 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
     public Loader<List<Earthquake>> onCreateLoader(int id, Bundle args) {
         // Create a new loader for the given URL
         return new EarthquakeLoader(this, USGS_REQUEST_URL);
+
+
     }
 
     @Override
     public void onLoadFinished(Loader<List<Earthquake>> loader, List<Earthquake> earthquakes) {
+
+        ProgressBar loading_spinner = (ProgressBar)findViewById(R.id.loading_spinner);
+        loading_spinner.setVisibility(View.GONE);
+        // Set empty state text to display "No earthquakes found."
+        mEmptyStateTextView.setText(R.string.no_earthquakes);
+
         // Clear the adapter of previous earthquake data
         adapter.clear();
 
