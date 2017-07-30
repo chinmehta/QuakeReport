@@ -38,7 +38,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
 
     /** URL for earthquake data from the USGS dataset */
     private static final String USGS_REQUEST_URL =
-            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time";
+            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time&limit=30";
 
 
     public static final String LOG_TAG = EarthquakeActivity.class.getName();
@@ -85,7 +85,7 @@ public class EarthquakeActivity extends AppCompatActivity implements LoaderCallb
             }
         });
         // Get a reference to the ConnectivityManager to check state of network connectivity
-        ConnectivityManager connMgr = (ConnectivityManager);
+        ConnectivityManager connMgr = (ConnectivityManager)
         getSystemService(Context.CONNECTIVITY_SERVICE);
 
 
